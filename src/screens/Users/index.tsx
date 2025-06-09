@@ -56,6 +56,8 @@ export const Users = () => {
               shape="rounded"
               style={{ margin: "20px auto 0" }}
               onChange={(e, value) => {
+                console.log(e);
+
                 setFilters({
                   ...filters,
                   page: value,
