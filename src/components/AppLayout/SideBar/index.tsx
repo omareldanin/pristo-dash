@@ -4,6 +4,10 @@ import { GoHome } from "react-icons/go";
 import { BiCategoryAlt } from "react-icons/bi";
 import { IoIosCloseCircle } from "react-icons/io";
 import { TfiLayoutSliderAlt } from "react-icons/tfi";
+import { IoRestaurantOutline } from "react-icons/io5";
+import { MdDeliveryDining } from "react-icons/md";
+import { FaUsers } from "react-icons/fa";
+import { FaBoxOpen } from "react-icons/fa";
 
 interface Props {
   toggleSideBar: () => void;
@@ -32,12 +36,37 @@ export const SideBar = ({ openSidebar, toggleSideBar }: Props) => {
             <span>الرئيسيه</span>
           </span>
         </NavLink>
+        <NavLink to={"/orders"}>
+          <span className="parent">
+            <FaBoxOpen size={22} />
+            <span>الطلبات</span>
+          </span>
+        </NavLink>
+        <NavLink to={"/vendors"}>
+          <span className="parent">
+            <IoRestaurantOutline size={22} />
+            <span>المطاعم</span>
+          </span>
+        </NavLink>
+        <NavLink to={"/delivery"}>
+          <span className="parent">
+            <MdDeliveryDining size={22} />
+            <span>الديلفرى</span>
+          </span>
+        </NavLink>
+        <NavLink to={"/users"}>
+          <span className="parent">
+            <FaUsers size={22} />
+            <span>المستخدمين</span>
+          </span>
+        </NavLink>
         <NavLink to={"/sliders"}>
           <span className="parent">
             <TfiLayoutSliderAlt size={22} />
             <span>سلايدر</span>
           </span>
         </NavLink>
+
         <NavLink to={"/main-categories"}>
           <span className="parent">
             <BiCategoryAlt size={22} />
