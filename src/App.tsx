@@ -22,7 +22,7 @@ import { io, Socket } from "socket.io-client";
 import { queryClient } from "./main";
 import toast from "react-hot-toast";
 
-const SOCKET_URL = "http://localhost:3000";
+const SOCKET_URL = "http://139.59.135.25:3000";
 
 function App() {
   const navigate = useNavigate();

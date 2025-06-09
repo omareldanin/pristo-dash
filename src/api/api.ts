@@ -6,7 +6,7 @@ import axios from "axios";
 // import { refreshTokenService } from "../services/refreshTokenService";
 // import toast from "react-hot-toast";
 
-const baseURL = "http://localhost:3000/";
+const baseURL = "http://139.59.135.25:3000/";
 
 export interface APIError {
   message: string;
